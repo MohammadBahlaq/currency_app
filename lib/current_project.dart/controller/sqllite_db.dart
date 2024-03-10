@@ -106,7 +106,7 @@ class SqlLiteDB {
       where DATE(selectedDate) Between DATE('$toDate') and DATE('$fromDate')
       order by selectedDate DESC Limit 2 
     ''';
-
+//
     var response = await db.rawQuery(qury);
 
     log(jsonEncode(response));
